@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: heroku-rails-test_production
   username: heroku-rails-test
   password: <%= ENV['HEROKU-RAILS-TEST_DATABASE_PASSWORD'] %>
